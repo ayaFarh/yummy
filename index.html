@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark-black position-relative">
+<div class="loading">
+  <span class="loader"></span>
+</div>
+
+  <nav class="d-flex  position-fixed top-0 bottom-0 start-0 ">
+    <div class="nav-list bg-dark-black pt-5">
+           <div class="">
+            <div class="ul-div">
+                <ul class="position-absolute ">
+                    <li class="list-unstyled">
+                        <a href="#" class="text-decoration-none text-white" id="Search-ancor">Search</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#" class="text-decoration-none text-white " id="Categories-ancor" >Categories</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#" class="text-decoration-none text-white" id="Area-ancor">Area</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#" class="text-decoration-none text-white " id="Ingredients-ancor">Ingredients</a>
+                    </li>
+                    <li class="list-unstyled">
+                        <a href="#" class="text-decoration-none text-white" id="contact-ancor">Contact Us</a>
+                    </li>
+                  
+                </ul>
+               </div>
+              <div class="nav-footer p-4 position-absolute bottom-0 ">
+                <i class="fa-brands fa-facebook  text-white"></i>
+                <i class="fa-brands fa-twitter  text-white"></i>
+                <i class="fa-solid fa-globe  mb-1 text-white"></i>
+                <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p>
+              </div>
+           </div>
+        </div>
+
+
+
+
+
+
+
+    <div class=" nav-img pt-5 d-flex flex-column justify-content-between align-items-center bg-white">
+       <div>
+        <img src="images/logo.png" alt="" class="w-100">
+       </div>
+        <div>
+            <i class="fa-solid fa-bars fs-3"></i>
+            <i class="fa-solid fa-xmark fs-3"></i>
+        </div>
+        <div class="pb-3">
+            <i class="fa-solid fa-globe d-block mb-1"></i>
+            <i class="fa-solid fa-share-nodes d-block"></i>
+        </div>
+    </div>
+  </nav>
+
+  <section class="Search wideth-80">
+    <div class="d-flex justify-content-between align-items-center">
+        <input class="search-name form-control bg-dark text-white" placeholder="Search By Name" name="search-name" id="search-name">
+        <input class="search-letter form-control bg-dark text-white" placeholder="Search By Firist letter" name="Firist-letter" id="Firist-letter">
+    </div>
+    <div>
+        <div class="meal-by-name row">
+           
+        </div>
+    </div>
+    <div class="meal-by-letter row">
+           
+    </div>
+
+  </section>
+
+
+  <section class="Categories wideth-80 text-center">
+  <div class="meal-details row">
+
+  </div>
+
+  </section>
+
+
+  <section class="filter-Categories wideth-80">
+    <div class="filter-Categories-details row">
+
+    </div>
+  </section>
+
+  <section class="Area wideth-80 ">
+    <div class="contry-name row cursor-pointer">
+        
+    </div>
+
+  </section>
+
+  <section class="filter-area wideth-80">
+    <div class="filter-Area-details row">
+
+
+    </div>
+  </section>
+
+  <section class="Ingredients  wideth-80">
+    <div>
+    <div class="Ingredientss-details row">
+
+
+    </div>
+</div>
+
+  </section>
+
+  <section class="filter-ingredient wideth-80">
+    <div class="filter-Ingredientss-details row">
+
+
+    </div>
+
+  </section>
+
+  <div class="position-relative">
+    <section class="contact wideth-80 position-absolute">
+        <form class="">
+           <div class="d-flex justify-content-around">
+            <div class="inpute-div">
+            <input class="name form-control" id="name" placeholder="Enter your name" type="text">
+            <p class="p-name d-none bg-bink p-3">Special characters and numbers not allowed</p>
+            </div>
+            <div class="inpute-div">
+              <input class="email form-control" id="email" placeholder="Enter your Email" type="email">
+              <p class="p-email bg-bink p-3 d-none ">Email not valid *exemple@yyy.zzz</p>
+            </div>
+           </div>
+           <div class="d-flex justify-content-around">
+           <div class="inpute-div d-block ">
+            <input class="Phone form-control" id="phone" placeholder="Enter your Phone" type="tel">
+            <p class="p-phone bg-bink p-3 d-none">Enter valid Phone Number</p>
+           </div>
+            <div class="inpute-div d-block">
+              <input class="age form-control" id="age" placeholder="Enter your Age" type="number">
+              <p class="p-age bg-bink p-3 d-none">Enter valid age</p>
+            </div>
+           </div>
+            <div class="d-flex justify-content-around">
+            <div class="inpute-div d-block">
+              <input class="password form-control" id="password" placeholder="Enter your password" type="password">
+              <p class="p-password bg-bink p-3  d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+            </div>
+            <div class="inpute-div d-block">
+              <input class="repassword form-control" id="repassword" placeholder="Repassword" type="password">
+              <p class="p-repassword bg-bink p-3 d-none">Enter valid repassword</p>
+            </div>
+            </div>
+            <button type="button" id="form-button" class="btn btn-outline-danger mt-2 d-block m-auto " disabled>Submite</button>
+        </form>
+    
+      </section>
+  </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
